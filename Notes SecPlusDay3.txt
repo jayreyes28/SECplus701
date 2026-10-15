@@ -1,0 +1,21 @@
+no access-list 8
+access-list 8 permit host 192.168.103.10
+access-list 8 permit host 192.168.103.11
+Int Gi 3
+ ip nat Inside
+Int gi 1
+ ip nat Outside
+IP Nat inside source static tcp 192.168.103.10 80 208.8.8.69 80
+IP Nat inside source static tcp 192.168.103.10 443 208.8.8.69 443
+IP Nat inside source static tcp 192.168.103.11 80 208.8.8.69 8080
+IP Nat inside source static tcp 192.168.103.11 443 208.8.8.69 8443
+!for www.surebet22.com
+ip host betlog.com 208.8.8.69
+ip host betlog.ph 208.8.8.69
+
+http://soc.rivanit.com/otrs/index.pl?
+admin 
+C1sc0123
+
+
+#2026101571000012
